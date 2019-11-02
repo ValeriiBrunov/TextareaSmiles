@@ -15,7 +15,7 @@
 Установка плагина:
 
 ```
-$ sudo composer require ValeriiBrunov/Textareasmiles
+$ sudo composer require valeriy-brunov/textareasmiles
 $ sudo composer dumpautoload
 ```
 
