@@ -1,0 +1,424 @@
+
+html div.wrap-textarea-smiles,
+body div.wrap-textarea-smiles,
+div.wrap-textarea-smiles span,
+div.wrap-textarea-smiles applet,
+div.wrap-textarea-smiles object,
+div.wrap-textarea-smiles iframe,
+div.wrap-textarea-smiles h1,
+div.wrap-textarea-smiles h2,
+div.wrap-textarea-smiles h3,
+div.wrap-textarea-smiles h4,
+div.wrap-textarea-smiles h5,
+div.wrap-textarea-smiles h6,
+div.wrap-textarea-smiles p,
+div.wrap-textarea-smiles blockquote,
+div.wrap-textarea-smiles pre,
+div.wrap-textarea-smiles a,
+div.wrap-textarea-smiles abbr,
+div.wrap-textarea-smiles acronym,
+div.wrap-textarea-smiles address,
+div.wrap-textarea-smiles big,
+div.wrap-textarea-smiles cite,
+div.wrap-textarea-smiles code,
+div.wrap-textarea-smiles del,
+div.wrap-textarea-smiles dfn,
+div.wrap-textarea-smiles em,
+div.wrap-textarea-smiles img,
+div.wrap-textarea-smiles ins,
+div.wrap-textarea-smiles kbd,
+div.wrap-textarea-smiles q,
+div.wrap-textarea-smiles s,
+div.wrap-textarea-smiles samp,
+div.wrap-textarea-smiles small,
+div.wrap-textarea-smiles strike,
+div.wrap-textarea-smiles strong,
+div.wrap-textarea-smiles sub,
+div.wrap-textarea-smiles sup,
+div.wrap-textarea-smiles tt,
+div.wrap-textarea-smiles var,
+div.wrap-textarea-smiles b,
+div.wrap-textarea-smiles u,
+div.wrap-textarea-smiles i,
+div.wrap-textarea-smiles center,
+div.wrap-textarea-smiles dl,
+div.wrap-textarea-smiles dt,
+div.wrap-textarea-smiles dd,
+div.wrap-textarea-smiles ol,
+div.wrap-textarea-smiles ul,
+div.wrap-textarea-smiles li,
+div.wrap-textarea-smiles fieldset,
+div.wrap-textarea-smiles form,
+div.wrap-textarea-smiles label,
+div.wrap-textarea-smiles legend,
+div.wrap-textarea-smiles table,
+div.wrap-textarea-smiles caption,
+div.wrap-textarea-smiles tbody,
+div.wrap-textarea-smiles tfoot,
+div.wrap-textarea-smiles thead,
+div.wrap-textarea-smiles tr,
+div.wrap-textarea-smiles th,
+div.wrap-textarea-smiles td,
+div.wrap-textarea-smiles article,
+div.wrap-textarea-smiles aside,
+div.wrap-textarea-smiles canvas,
+div.wrap-textarea-smiles details,
+div.wrap-textarea-smiles embed,
+div.wrap-textarea-smiles figure,
+div.wrap-textarea-smiles figcaption,
+div.wrap-textarea-smiles footer,
+div.wrap-textarea-smiles header,
+div.wrap-textarea-smiles hgroup,
+div.wrap-textarea-smiles menu,
+div.wrap-textarea-smiles nav,
+div.wrap-textarea-smiles output,
+div.wrap-textarea-smiles ruby,
+div.wrap-textarea-smiles section,
+div.wrap-textarea-smiles summary,
+div.wrap-textarea-smiles time,
+div.wrap-textarea-smiles mark,
+div.wrap-textarea-smiles audio,
+div.wrap-textarea-smiles video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+div.wrap-textarea-smiles article,
+div.wrap-textarea-smiles aside,
+div.wrap-textarea-smiles details,
+div.wrap-textarea-smiles figcaption,
+div.wrap-textarea-smiles figure,
+div.wrap-textarea-smiles footer,
+div.wrap-textarea-smiles header,
+div.wrap-textarea-smiles hgroup,
+div.wrap-textarea-smiles menu,
+div.wrap-textarea-smiles nav,
+div.wrap-textarea-smiles section { display: block; }
+
+body div.wrap-textarea-smiles { line-height: 1; }
+
+div.wrap-textarea-smiles ol,
+div.wrap-textarea-smiles ul { list-style: none; }
+
+div.wrap-textarea-smiles blockquote,
+div.wrap-textarea-smiles q { quotes: none; }
+
+div.wrap-textarea-smiles blockquote: before,
+div.wrap-textatea-smiles blockquote: after,
+div.wrap-textatea-smiles q: before,
+div.wrap-textatea-smiles q: after {
+    content: '';
+    content: none;
+}
+
+div.wrap-textarea-smiles table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/**
+ * Текстовое поле.
+ */
+.wrap-textarea-smiles { min-width: 100px; }
+ 
+.wrap-textarea-smiles,
+.textarea-smiles { position: relative; }
+
+.textarea-smiles {
+ 	cursor: text;
+	border: 0;
+	font-size: 14px;
+	color: #666;
+  padding-right: 31px;
+}
+
+.textarea-smiles .placeholder,
+.textarea-smiles .textarea {
+	border: 1px solid #B6B6B6;
+  border-radius: 3px;
+	padding: 6px;
+  margin-right: 1px;
+}
+
+.textarea-smiles .textarea {
+  line-height: 23px;
+  font-size: 15px;
+	color: #000;
+	display: none;
+	white-space: pre-wrap;
+  overflow: hidden;
+	overflow-y: scroll;
+	resize: none;
+}
+
+/**
+ * Эмоджи.
+ */
+.box-smiles {
+ 	display: none;
+ 	position: absolute;
+ 	top: 0;
+ 	border: 1px solid #B6B6B6;
+  border-radius: 3px;
+ 	padding: 5px;
+  margin-top: 4px;
+  margin-bottom: 3px;
+  overflow: hidden;
+	overflow-y: scroll;
+  background: rgba( 255, 255, 255, 1);
+}
+ 
+.box-smiles span { margin: 2px !important; }
+ 
+.emoji {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: url('https://web3r.ru/img/u/emoji.png') no-repeat;
+}
+
+/**
+ * Кнопка со смайликом, нажатие на которую вызывает открытие панели смайликов.
+ */
+button.btn-smile {
+	border: 0;
+  padding: 0;
+  padding-right: 5px;
+	background-color: #fff;
+	border-color: #fff;
+	cursor: pointer;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto 0;
+}
+
+button.btn-smile svg {
+	width: 24px;
+	height: 24px;
+  fill: #b6b6b6;
+}
+
+button.btn-smile svg:hover { fill: #494949; }
+
+.e1   { background-position: -0px -0px; }
+.e10  { background-position: -16px -16px; }
+.e100 { background-position: -48px -192px; }
+.e101 { background-position: -64px -192px; }
+.e102 { background-position: -80px -192px; }
+.e103 { background-position: -96px -192px; }
+.e104 { background-position: -112px -192px; }
+.e105 { background-position: -0px -208px; }
+.e106 { background-position: -16px -208px; }
+.e107 { background-position: -32px -208px; }
+.e108 { background-position: -48px -208px; }
+.e109 { background-position: -64px -208px; }
+.e11  { background-position: -32px -16px; }
+.e110 { background-position: -80px -208px; }
+.e111 { background-position: -96px -208px; }
+.e112 { background-position: -112px -208px; }
+.e113 { background-position: -0px -224px; }
+.e114 { background-position: -16px -224px; }
+.e115 { background-position: -32px -224px; }
+.e116 { background-position: -48px -224px; }
+.e117 { background-position: -64px -224px; }
+.e118 { background-position: -80px -224px; }
+.e119 { background-position: -96px -224px; }
+.e12  { background-position: -48px -16px; }
+.e120 { background-position: -112px -224px; }
+.e121 { background-position: -0px -240px; }
+.e122 { background-position: -16px -240px; }
+.e123 { background-position: -32px -240px; }
+.e124 { background-position: -48px -240px; }
+.e125 { background-position: -64px -240px; }
+.e126 { background-position: -80px -240px; }
+.e127 { background-position: -96px -240px; }
+.e128 { background-position: -112px -240px; }
+.e129 { background-position: -0px -256px; }
+.e13  { background-position: -64px -16px; }
+.e130 { background-position: -16px -256px; }
+.e131 { background-position: -32px -256px; }
+.e132 { background-position: -48px -256px; }
+.e133 { background-position: -64px -256px; }
+.e134 { background-position: -80px -256px; }
+.e135 { background-position: -96px -256px; }
+.e136 { background-position: -112px -256px; }
+.e137 { background-position: -0px -272px; }
+.e138 { background-position: -16px -272px; }
+.e139 { background-position: -32px -272px; }
+.e14  { background-position: -80px -16px; }
+.e140 { background-position: -48px -272px; }
+.e141 { background-position: -64px -272px; }
+.e142 { background-position: -80px -272px; }
+.e143 { background-position: -96px -272px; }
+.e144 { background-position: -112px -272px; }
+.e145 { background-position: -0px -288px; }
+.e146 { background-position: -16px -288px; }
+.e147 { background-position: -32px -288px; }
+.e148 { background-position: -48px -288px; }
+.e149 { background-position: -64px -288px; }
+.e15  { background-position: -96px -16px; }
+.e150 { background-position: -80px -288px; }
+.e151 { background-position: -96px -288px; }
+.e152 { background-position: -112px -288px; }
+.e153 { background-position: -0px -304px; }
+.e154 { background-position: -16px -304px; }
+.e155 { background-position: -32px -304px; }
+.e156 { background-position: -48px -304px; }
+.e157 { background-position: -64px -304px; }
+.e158 { background-position: -80px -304px; }
+.e159 { background-position: -96px -304px; }
+.e16  { background-position: -112px -16px; }
+.e160 { background-position: -112px -304px; }
+.e161 { background-position: -0px -320px; }
+.e162 { background-position: -16px -320px; }
+.e163 { background-position: -32px -320px; }
+.e164 { background-position: -48px -320px; }
+.e165 { background-position: -64px -320px; }
+.e166 { background-position: -80px -320px; }
+.e167 { background-position: -96px -320px; }
+.e168 { background-position: -112px -320px; }
+.e169 { background-position: -0px -336px; }
+.e17  { background-position: -0px -32px; }
+.e170 { background-position: -16px -336px; }
+.e171 { background-position: -32px -336px; }
+.e172 { background-position: -48px -336px; }
+.e173 { background-position: -64px -336px; }
+.e174 { background-position: -80px -336px; }
+.e175 { background-position: -96px -336px; }
+.e176 { background-position: -112px -336px; }
+.e177 { background-position: -0px -352px; }
+.e178 { background-position: -16px -352px; }
+.e179 { background-position: -32px -352px; }
+.e18  { background-position: -16px -32px; }
+.e180 { background-position: -48px -352px; }
+.e181 { background-position: -64px -352px; }
+.e182 { background-position: -80px -352px; }
+.e183 { background-position: -96px -352px; }
+.e184 { background-position: -112px -352px; }
+.e185 { background-position: -0px -368px; }
+.e186 { background-position: -16px -368px; }
+.e187 { background-position: -32px -368px; }
+.e188 { background-position: -48px -368px; }
+.e189 { background-position: -64px -368px; }
+.e19  { background-position: -32px -32px; }
+.e190 { background-position: -80px -368px; }
+.e191 { background-position: -96px -368px; }
+.e192 { background-position: -112px -368px; }
+.e193 { background-position: -0px -384px; }
+.e194 { background-position: -16px -384px; }
+.e195 { background-position: -32px -384px; }
+.e196 { background-position: -48px -384px; }
+.e197 { background-position: -64px -384px; }
+.e198 { background-position: -80px -384px; }
+.e199 { background-position: -96px -384px; }
+.e2   { background-position: -16px -0px; }
+.e20  { background-position: -48px -32px; }
+.e200 { background-position: -112px -384px; }
+.e201 { background-position: -0px -400px; }
+.e202 { background-position: -16px -400px; }
+.e203 { background-position: -32px -400px; }
+.e204 { background-position: -48px -400px; }
+.e205 { background-position: -64px -400px; }
+.e206 { background-position: -80px -400px; }
+.e207 { background-position: -96px -400px; }
+.e21  { background-position: -64px -32px; }
+.e22  { background-position: -80px -32px; }
+.e23  { background-position: -96px -32px; }
+.e24  { background-position: -112px -32px; }
+.e25  { background-position: -0px -48px; }
+.e26  { background-position: -16px -48px; }
+.e27  { background-position: -32px -48px; }
+.e28  { background-position: -48px -48px; }
+.e29  { background-position: -64px -48px; }
+.e3   { background-position: -32px -0px; }
+.e30  { background-position: -80px -48px; }
+.e31  { background-position: -96px -48px; }
+.e32  { background-position: -112px -48px; }
+.e33  { background-position: -0px -64px; }
+.e34  { background-position: -16px -64px; }
+.e35  { background-position: -32px -64px; }
+.e36  { background-position: -48px -64px; }
+.e37  { background-position: -64px -64px; }
+.e38  { background-position: -80px -64px; }
+.e39  { background-position: -96px -64px; }
+.e4   { background-position: -48px -0px; }
+.e40  { background-position: -112px -64px; }
+.e41  { background-position: -0px -80px; }
+.e42  { background-position: -16px -80px; }
+.e43  { background-position: -32px -80px; }
+.e44  { background-position: -48px -80px; }
+.e45  { background-position: -64px -80px; }
+.e46  { background-position: -80px -80px; }
+.e47  { background-position: -96px -80px; }
+.e48  { background-position: -112px -80px; }
+.e49  { background-position: -0px -96px; }
+.e5   { background-position: -64px -0px; }
+.e50  { background-position: -16px -96px; }
+.e51  { background-position: -32px -96px; }
+.e52  { background-position: -48px -96px; }
+.e53  { background-position: -64px -96px; }
+.e54  { background-position: -80px -96px; }
+.e55  { background-position: -96px -96px; }
+.e56  { background-position: -112px -96px; }
+.e57  { background-position: -0px -112px; }
+.e58  { background-position: -16px -112px; }
+.e59  { background-position: -32px -112px; }
+.e6   { background-position: -80px -0px; }
+.e60  { background-position: -48px -112px; }
+.e61  { background-position: -64px -112px; }
+.e62  { background-position: -80px -112px; }
+.e63  { background-position: -96px -112px; }
+.e64  { background-position: -112px -112px; }
+.e65  { background-position: -0px -128px; }
+.e66  { background-position: -16px -128px; }
+.e67  { background-position: -32px -128px; }
+.e68  { background-position: -48px -128px; }
+.e69  { background-position: -64px -128px; }
+.e7   { background-position: -96px -0px; }
+.e70  { background-position: -80px -128px; }
+.e71  { background-position: -96px -128px; }
+.e72  { background-position: -112px -128px; }
+.e73  { background-position: -0px -144px; }
+.e74  { background-position: -16px -144px; }
+.e75  { background-position: -32px -144px; }
+.e76  { background-position: -48px -144px; }
+.e77  { background-position: -64px -144px; }
+.e78  { background-position: -80px -144px; }
+.e79  { background-position: -96px -144px; }
+.e8   { background-position: -112px -0px; }
+.e80  { background-position: -112px -144px; }
+.e81  { background-position: -0px -160px; }
+.e82  { background-position: -16px -160px; }
+.e83  { background-position: -32px -160px; }
+.e84  { background-position: -48px -160px; }
+.e85  { background-position: -64px -160px; }
+.e86  { background-position: -80px -160px; }
+.e87  { background-position: -96px -160px; }
+.e88  { background-position: -112px -160px; }
+.e89  { background-position: -0px -176px; }
+.e9   { background-position: -0px -16px; }
+.e90  { background-position: -16px -176px; }
+.e91  { background-position: -32px -176px; }
+.e92  { background-position: -48px -176px; }
+.e93  { background-position: -64px -176px; }
+.e94  { background-position: -80px -176px; }
+.e95  { background-position: -96px -176px; }
+.e96  { background-position: -112px -176px; }
+.e97  { background-position: -0px -192px; }
+.e98  { background-position: -16px -192px; }
+.e99  { background-position: -32px -192px; }
+
+/**
+ * Кнопка отправки текстового сообщения.
+ */
+input.sub-text-smiles {
+  display: none;
+  margin-top: 3px;
+}

@@ -1,0 +1,15 @@
+{
+    "name": "ValeriiBrunov/Textareasmiles",
+    "description": "Textareasmiles плагин для CakePHP",
+    "type": "cakephp-plugin",
+    "homepage": "https://github.com/ValeriiBrunov/TextareaSmiles",
+    "license": "MIT",
+    "require": {
+        "cakephp/cakephp": "^3.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Textareasmiles\\": "src/"
+        }
+    }
+}
