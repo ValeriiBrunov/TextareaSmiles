@@ -1,6 +1,6 @@
 {
     "name": "valeriy-brunov/textareasmiles",
-    "description": "Textareasmiles плагин для CakePHP",
+    "description": "Плагин для cakePHP, который выводит форму ввода текста с возможность вставки смайликов.",
     "type": "cakephp-plugin",
     "homepage": "https://github.com/valeriy-brunov/textareasmiles",
     "license": "MIT",
