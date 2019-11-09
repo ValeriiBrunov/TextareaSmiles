@@ -20,10 +20,11 @@ $ sudo composer dumpautoload
 ```
 
 #### Инициализация элемента
+
 В шаблоне с расширением .ctp необходимо вставить код:
 
 ```php
-echo $this->element('TextareaSmiles.formtextareasmiles');
+echo $this->element('Textareasmiles.formtextareasmiles');
 ```
 
 Полный перечень дополнительных настроек элемента.
