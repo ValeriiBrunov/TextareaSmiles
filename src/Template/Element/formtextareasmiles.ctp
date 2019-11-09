@@ -39,4 +39,5 @@
  */
 ?>
 <?= $this->Html->css('Textareasmiles.textareasmiles', ['block' => true]) ?>
+<?= $this->Html->script('Libajax.libajax', ['block' => true]) ?>
 <?= $this->Html->script('Textareasmiles.textareasmiles', ['block' => true]) ?>
