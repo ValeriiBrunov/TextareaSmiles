@@ -5,7 +5,8 @@
     "homepage": "https://github.com/valeriy-brunov/textareasmiles",
     "license": "MIT",
     "require": {
-        "cakephp/cakephp": "^3.5"
+        "cakephp/cakephp": "^3.5",
+        "valeriy-brunov/libajax": ">=1.0.0"
     },
     "autoload": {
         "psr-4": {
