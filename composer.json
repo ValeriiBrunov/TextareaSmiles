@@ -6,7 +6,7 @@
     "license": "MIT",
     "require": {
         "cakephp/cakephp": "^3.5",
-        "valeriy-brunov/libajax": ">=1.0.0"
+        "valeriy-brunov/libajax": "^1.0"
     },
     "autoload": {
         "psr-4": {
